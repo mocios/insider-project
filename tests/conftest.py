@@ -17,7 +17,7 @@ def setup(request):
     browser = request.config.getoption("browser")
     if browser == "firefox":
         driver = webdriver.Firefox()
-    else:
+    elif browser == "chrome":
         driver = webdriver.Chrome()
 
     action = ActionChains(driver)
