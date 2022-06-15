@@ -23,7 +23,7 @@ class PetStoreTests:
         assert response.status_code == 200
 
     def test_get_non_existing_pet(self):
-        response = api_helper.get_pet("123")
+        response = api_helper.get_pet(123)
         assert response.status_code == 404
 
     def test_get_pet_invalid_id(self):
